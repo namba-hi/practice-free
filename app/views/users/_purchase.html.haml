@@ -1,0 +1,48 @@
+.account_body
+  %main.single-main
+    %section.l-single-container
+      %h2.l-single-head.buy-head 購入内容の確認
+      %section.buy-content.buy-item
+        .buy-content-inner
+          .buy-item-box
+            %h3.buy-item-image
+              %img.is-higher-height{alt: "", "data-src" => "https://static.mercdn.net/thumb/photos/m88831516255_1.jpg?1581176568", :src => "https://static.mercdn.net/thumb/photos/m88831516255_1.jpg?1581176568"}/
+            .buy-item-detail
+              %p.buy-item-name グレイル　ボアブルゾン
+              %p.buy-price-ja
+                %span ¥3,200
+                %span.item-shipping-fee （税込）送料込み
+      %section.buy-content.buy-item
+        .buy-content-inner
+          %form.buy-form{action: ""}
+            %ul.buy-price-table
+              %li.buy-price-row.buy-you-pay.bold
+                .buy-price-cell.buy-price-cell-label 支払い金額
+                .buy-price-cell
+                  %span{"data-buy-pay" => "3200"} ¥3,200
+            %ul.buy-accordion
+              %li.accordion-parent
+                .buy-use-poin
+                  %input{type: "checkbox", value: "1"}/
+                  %i.icon-check
+                  %label{for: "status_all"} ポイントを使用 (所持ポイント: P300)
+            %section.buy-content.buy-user-info{"data-buy" => "pay-method"}
+              .buy-content-inner
+                %h3 支払い方法
+                %a{href: ""}
+                  %p.buy-user-info-text
+                    %i.icon-plus-circle
+                      = icon('fas','plus-circle',class:'icon')
+                    %span.buy-register-text 登録してください
+            %section.buy-content.buy-user-info
+              .buy-content-inner
+                %h3 配送先
+                %a{href: ""}
+                  %p.buy-user-info-text
+                    %i.icon-plus-circle
+                      = icon('fas','plus-circle',class:'icon')
+                    %span.buy-register-text 登録してください
+            %section.buy-content.buy-user-info
+              %button.btn-default.btn-red.bold{disabled: "disabled", type: "submit"} 購入する
+              %input#user_info_is_not_complete{type: "hidden"}/
+        %section
