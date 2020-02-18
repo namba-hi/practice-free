@@ -22,12 +22,12 @@
       margin: 0px 8px 0px 0px;
     }
   }
-  .single-main{
+  .purchase-main{
     display: block;
     // width: 700px;
     // margin: 0 auto;
   }
-    .l-single-container{
+    .purchase-mainbox{
       background-color: #fff;
       width: 700px;
       margin: 0 auto;
@@ -37,21 +37,21 @@
         text-align: center;
       }
     }
-    .buy-content{
+    .purchase-content{
       margin: 0;
       padding: 32px 16px;
       border-top: 1px solid#f5f5f5;
     }
-    .buy-item{
+    .purchase-item{
       text-align: center;
     }
-      .buy-content-inner{
+      .purchase-content-inner{
         max-width: 343px;
         margin: 0 auto;
         display: flex;
-        .buy-item-box{
+        .purchase-item-box{
           display: flex;
-          .buy-item-image{
+          .purchase-item-image{
             height: 80px;
             width: 80px;
             min-width: 80px;
@@ -61,66 +61,66 @@
             font-size: 22px;
             -webkit-box-pack: center;
             -webkit-box-align: center;
-            .is-higher-height{
+            &__img{
               width: auto;
               max-height: 80px;
             }
           }
-        .buy-item-detail{
+        .purchase-item-detail{
           margin-right: 16px;
-          .buy-item-name{
+          &__name{
             font-size: 14px;
             margin: 0;
             padding: 0 0 8px;
             line-height: 1.5;
             text-align: left;
           }
-          .buy-price-ja{
+          .purchase-price-ja{
             margin: 0;
             text-align: left;
             font-size: 15px;
             font-weight: 600;
-            .item-shipping-fee{
+            &__fee{
               font-size: 12px;
               display: inline-block;
             }
           }
         }
         }
-        .buy-price-table {
+        .purchase-price-data {
           display: table;
           border-collapse: collapse;
           width: 100%;
           &:first-child {
             margin: 0;
           }
-          .buy-price-cell-label {
+          .purchase-price-cell-label {
             font-size: 18px;
           }
         }
         
-        .buy-price-row {
+        .purchase-price-row {
           display: table-row;
           &:first-child {
             border: 0;
           }
         }
         
-        .buy-price-cell {
+        .purchase-price-cell {
           display: table-cell;
           padding: 0;
           text-align: right;
           &:first-child {
             text-align: left;
           }
-          &.buy-accordion {
+          &.purchase-accordion {
             padding: 0;
             .accordion-toggle {
               padding: 16px 0;
             }
           }
         }
-        .buy-accrdion{
+        .purchase-accrdion{
           margin: 24px 0;
         }
           .use-point-accordion{
@@ -141,11 +141,11 @@
               text-align: center;
               color: white;
             }
-        .buy-user-info{
+        .purchase-user-info{
           text-align: left;
           padding: 24px 0;
           border-top: 1px solid #f5f5f5;
-          .buy-content-inner{
+          .purchase-content-inner{
             display: block;
           }
           h3{
